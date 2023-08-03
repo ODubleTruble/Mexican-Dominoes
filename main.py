@@ -17,7 +17,7 @@ if shuffle: dominoes.shuffle()
 dominoes.print_all_tiles()
 
 
-# Create players and deal starting dominoes
+# Create players and deal starting dominoes.
 players = []
 for i in range(total_players):
     players.append(Player(f'Player {i+1}'))
@@ -26,6 +26,7 @@ for player in players:
         new_tile = dominoes.deal_new_tile()
         player.add_tile_to_hand(new_tile)
 
+# Print players' hands.
 for player in players:
     player.print_hand()
 dominoes.print_all_tiles()
@@ -33,3 +34,4 @@ dominoes.print_all_tiles()
 
 # Implement game logic
 # ...
+

@@ -28,7 +28,7 @@ class DominoSet:
         return self.tiles
 
     def print_all_tiles(self):
-        print(f'{len(self.tiles)} dominoes in set.')
+        print(f'{len(self.tiles)} dominoes in set:')
         for tile in self.tiles:
             print(tile)
 
